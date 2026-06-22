@@ -1,8 +1,35 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .banner {
   background-image: url(./assets/banner.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  color: #caeb66 !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #000 !important;
+  transition: 0.5s !important;
+}
+
+.swiper-pagination-bullet {
+  background: #111600dc !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #80aa00 !important;
+  width: 20px !important;
+  border-radius: 20px !important;
 }
