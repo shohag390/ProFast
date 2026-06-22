@@ -6,6 +6,10 @@ import Login from "../components/Auth/Login";
 import Register from "../components/Auth/Register";
 import DashboardLayout from "../layout/DashboardLayout";
 import Dashboardhome from "../components/dashboard/Dashboardhome";
+import AboutUs from "../pages/AboutUs";
+import Services from "../pages/Services";
+import Pricing from "../pages/Pricing";
+import Coverage from "../pages/Coverage";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +20,22 @@ export const router = createBrowserRouter([
         index: true,
         Component: Home,
       },
+      {
+        path: "services",
+        Component: Services,
+      },
+      {
+        path: "coverage",
+        Component: Coverage,
+      },
+      {
+        path: "about-us",
+        Component: AboutUs,
+      },
+      {
+        path: "pricing",
+        Component: Pricing,
+      },
     ],
   },
   {
@@ -23,7 +43,7 @@ export const router = createBrowserRouter([
     Component: AuthLayout,
     children: [
       {
-        path: "login",
+        path: "sign-in",
         Component: Login,
       },
       {
